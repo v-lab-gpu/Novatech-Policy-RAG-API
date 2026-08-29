@@ -38,6 +38,10 @@ Novatech-Policy-RAG-API/
 │   ├── onboarding_guide.txt
 │   ├── product_knowledge_base.txt
 │   └── security_policy.txt
+├── Chatbot_Screenshots/
+│   ├── swagger-ui.png
+│   ├── rag-question.png
+│   └── rag-response.png
 ├── .gitignore
 ├── .python-version
 ├── requirements.txt
@@ -97,19 +101,6 @@ http://127.0.0.1:8000/docs
 
 You can use the Swagger interface to test the available endpoints and submit questions to the RAG application.
 
-## Security
-
-Sensitive information such as the Groq API key is managed through environment variables. The `.env` file is excluded from version control through `.gitignore`, preventing credentials from being committed to the repository.
-
-## Future Improvements
-
-- Deploy the API to a public cloud environment
-- Add a user-friendly web interface
-- Improve document retrieval and ranking
-- Add support for additional document formats
-- Add authentication and API access controls
-- Add automated testing and monitoring
-
 ## Demo
 
 ### FastAPI Swagger UI
@@ -123,3 +114,16 @@ Sensitive information such as the Groq API key is managed through environment va
 ### RAG Response
 
 ![RAG Response](Chatbot_Screenshots/rag-response.png)
+
+## Security
+
+Sensitive information such as the Groq API key is managed through environment variables. The `.env` file is excluded from version control through `.gitignore`, preventing credentials from being committed to the repository.
+
+## Future Improvements
+
+- Deploy the API to a public cloud environment
+- Add a user-friendly web interface
+- Improve document retrieval and ranking
+- Add support for additional document formats
+- Add authentication and API access controls
+- Add automated testing and monitoring
