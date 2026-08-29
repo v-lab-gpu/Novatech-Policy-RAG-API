@@ -10,8 +10,8 @@ import chromadb
 
 
 load_dotenv()
-Groq_api_key=os.getenv("groq_api_key")
-print(Groq_api_key[:10])
+Groq_api_key=os.getenv("GROQ_API_KEY")
+
 
 logging.basicConfig(level=logging.INFO,format="%(asctime)s | %(message)s")
 logger=logging.getLogger(__name__)
