@@ -7,7 +7,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from openai import OpenAI
 import chromadb
-
+from pathlib import Path
 
 load_dotenv()
 Groq_api_key=os.getenv("GROQ_API_KEY")
@@ -32,7 +32,8 @@ chroma_client=chromadb.Client()
 
 
 def load_and_index_docs():
-    data_folder = "F:\Resume\AIML\Test\data"
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    data_folder = BASE_DIR / "data"
 
     try:
         chroma_client.delete_collection('docs')
