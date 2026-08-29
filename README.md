@@ -109,3 +109,17 @@ Sensitive information such as the Groq API key is managed through environment va
 - Add support for additional document formats
 - Add authentication and API access controls
 - Add automated testing and monitoring
+
+## Demo
+
+### FastAPI Swagger UI
+
+![FastAPI Swagger UI](Chatbot_Screenshots/swagger-ui.png)
+
+### RAG Question
+
+![RAG Question](Chatbot_Screenshots/rag-question.png)
+
+### RAG Response
+
+![RAG Response](Chatbot_Screenshots/rag-response.png)
